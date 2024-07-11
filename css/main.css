@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #272b30;
+  --secondary-color: #3a497b;
+  --hover-color: #0daefd;
+}
+
+body {
+  margin: 0;
+  font-family: "Comfortaa", sans-serif;
+  background-color:var(--main-color) ;
+  height: 500vh;
+}
+
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============================== */
+/*              Header            */
+/* ============================== */
+.header {
+  overflow: hidden;
+  height: 240px;
+}
+.header img {
+  vertical-align: middle;
+}
+
+
+/* ============================== */
+/*              Nav               */
+/* ============================== */
+.nav {
+  top: 44px;
+}
+.nav .container {
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 10px 0 #000 !important;
+  top: -34.5px;
+}
+.nav .logo-img {
+  width: 42px;
+}
+
+.nav .cat li a {
+  color: #fff;
+  font-weight: 100;
+  font-size: 12px;
+  transition-duration: 0.4s;
+}
+
+.nav .cat li.active a,
+.nav .cat li a:hover {
+  color: var(--hover-color);
+}
+
+.logo-name  {
+  font-weight: 200;
+}
+
+@media (max-width: 992px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav .container {
+    height: 69px;
+    overflow: hidden;
+    transition-duration: 0.4s;
+  }
+
+  .nav .container.open {
+    display: block;
+    height: 272px;
+  }
+}
+
+
+/* ============================== */
+/*              Games             */
+/* ============================== */
+.games .game{
+
+  min-height: 300px;
+}
+.games .game h6 {
+  font-size: 12px;
+  font-weight: bold;
+}
+.games .game-down h6 {
+  font-size: 10px;
+  font-weight: bold;
+}
+.games .game p {
+  font-size: 13px;
+  color: #999;
+  word-break: break-all;
+}
+
+.games .game-card {
+  transition-duration: 0.5s;
+  cursor: pointer;
+  .paid-status {
+    transition-duration: 0.5s;
+    background-color: var(--secondary-color);
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:hover .paid-status {
+    background-color: var(--hover-color);
+  }
+
+  .game-down h6 {
+    background-color: #353639;
+  }
+
+  img {
+    filter: grayscale(0.6);
+    transition-duration: 0.5s;
+  }
+  &:hover img {
+    filter: grayscale(0);
+  }
+}
