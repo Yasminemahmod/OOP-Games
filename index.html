@@ -10,10 +10,17 @@
   <title>Home</title>
 </head>
 <body>
+
+  <div class="loader-cover w-100 vh-100 position-absolute d-flex justify-content-center align-items-center z-3">
+    <span class="loader"></span>
+  </div>
+
+  <section class="all-games">
+    
   <div class="header">
     <img src="images/wraper.png" alt="game image">
   </div>
-  <div class="nav position-sticky z-3">
+  <div class="nav position-sticky z-2">
     <div class="container py-3 rounded-4 position-absolute start-50 translate-middle-x">
       <div class="row justify-content-between align-items-center">
         <div class="col-6 col-lg-4 logo d-flex align-items-center">
@@ -38,37 +45,32 @@
       </div>
     </div>
   </div>
-
-
-
   <!-- Body -->
   <div class="games my-5 pt-5">
     <div class="container">
       <div class="row g-3">
-        <div class="card col-12 col-md-6 col-lg-4 col-xl-3"> 
-          <div class="game text-white border border-dark border-1 pt-4 px-4 rounded-top-3">
-            <div class="img overflow-hidden rounded-top-2">
-              <img src="images/images12.jpg" alt="">
-            </div>
-            <div class="game-title mt-3 d-flex justify-content-between align-items-center">
-              <h6 class="game-name">Tarisland</h6>
-              <h6 class="paid-status p-2 rounded-2">Free</h6>
-            </div>
-            <p class="sub-disc text-center fw-bold">A,cross-platform,MMORPG,developed,by,Level,Infinite,and</p>
-          </div>
-          <div class="game-down d-flex px-4 justify-content-between pt-2 text-white rounded-bottom-3 border border-top-0 border-dark">
-            <h6 class="p-2 rounded-2">MMORPG</h6>
-            <h6 class="p-2 rounded-2">PC (Windows)</h6>
-          </div>
-        </div>
       </div>
     </div>
   </div>
+  </section>
+
+
+  <section class="details d-none my-4">
+    <div class="container">
+      <div class="det-header px-5 d-flex justify-content-between align-items-center">
+        <h3 class="text-white">Details Game</h3>
+        <i class="fa-solid fa-xmark close text-secondary fs-3"></i>
+      </div>
+      <div class="game-det py-4">
+        <div class="row g-4">
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
 
-  <!-- <script src="js/main.js"></script> -->
-  <script src="js/test.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

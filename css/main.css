@@ -11,7 +11,6 @@ body {
   margin: 0;
   font-family: "Comfortaa", sans-serif;
   background-color:var(--main-color) ;
-  height: 500vh;
 }
 
 img {
@@ -133,4 +132,70 @@ a {
   &:hover img {
     filter: grayscale(0);
   }
+}
+
+
+.loader-cover {
+  background-color: var(--main-color);
+  opacity: 0.8;
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+
+
+
+
+
+/* Details Section */
+.btn{
+  transition-duration: 0.3;
+}
+.btn:hover {
+  background-color: #ffc107;
+}
+.close {
+  cursor: pointer;
+}
+.game-det span {
+  background-color: #0dcaf0;
+  color: #000;
+  font-size: 11px;
+  padding: 4px 7px;
+  border-radius: 6px;
+  font-weight: 900;
+}
+.game-det p {
+  font-size: 13px;
+  font-weight: 900;
 }
