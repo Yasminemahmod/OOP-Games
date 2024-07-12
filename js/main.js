@@ -189,6 +189,4 @@ async function getGameDet(id) {
 
 }
 
-// getGameDet()
-
 
